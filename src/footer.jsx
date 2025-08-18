@@ -44,11 +44,9 @@ export default function Footer() {
       component="footer" 
       position="static" 
       sx={{ 
-        width: "100dvw",          // ✅ full dynamic viewport width
-        left: 0,                  // ✅ align to left edge
-        right: 0,                 // ✅ align to right edge
-        bottom: 0,
-        ml: "calc(-50vw + 50%)",   // shift out of centered #root
+         mx: "auto",  mr: 0, px: 0,
+         width : "100dvw",
+         ml: { xs: 0, md: "calc(-50vw + 50%)" }, // shift out of centered #root
         backgroundColor: "#0B1D51",//"#2C28A1ca",
         borderTop: "2px solid #ffffff",
         
