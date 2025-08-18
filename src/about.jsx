@@ -7,9 +7,9 @@ export default function(){
         <Container sx={{backgroundColor : "transparent"}}>
                     <Typography variant="subtitle1"
                     sx={{
-                    fontFamily: "Inter",
+                    fontFamily: "Playfair",//"Inter",
                     fontOpticalSizing: "auto",
-                    fontWeight: 300,
+                    fontWeight: 500 ,//300,
                     fontStyle: "normal",
                     color: "#ffffff",//"#8CCDEB"
                     }}
