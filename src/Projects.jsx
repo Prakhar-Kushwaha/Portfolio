@@ -10,7 +10,7 @@ export default function({images , title}){
   
     return (
       <Container sx={{backgroundColor : "transparent"}}>
-      <Typography variant="h6"
+      <Typography variant="body1"
       sx={{
       fontFamily: "Actor",
       fontOpticalSizing: "auto",

@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #725CAD #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -14,8 +14,8 @@
 }
 
 body {
-  background:
-  linear-gradient(to top, #c5c7f9cc, #e3f2f6);
+  background-color:"#8CCDEB";
+  /* linear-gradient(to top, #c5c7f9cc, #e3f2f6); */
   margin: 0;
   padding: 0;
 }

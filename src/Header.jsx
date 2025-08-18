@@ -10,7 +10,8 @@ import Grid from '@mui/material/Grid';
 export default function Header({ darkTheme, toggleTheme }) {
     return (
         <Box>
-            <AppBar sx={{ backgroundColor: "rgba(15, 152, 189, 0.91)", padding: "8px 16px" }}>
+            <AppBar sx={{ backgroundColor:"#0B1D51", //"rgba(15, 152, 189, 0.91)",
+             padding: "8px 16px" }}>
                 <Grid container alignItems="center">
                     {/* Left Grid for Name */}
                     <Grid item xs={10} sx={{ textAlign: "left" }}>

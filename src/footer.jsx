@@ -49,14 +49,14 @@ export default function Footer() {
         right: 0,                 // ✅ align to right edge
         bottom: 0,
         ml: "calc(-50vw + 50%)",   // shift out of centered #root
-        backgroundColor: "#2C28A1ca",
+        backgroundColor: "#0B1D51",//"#2C28A1ca",
         borderTop: "2px solid #ffffff",
         
       }}
     >
       <Toolbar sx={{ flexDirection: "column", alignItems: "center", py: 1 }}>
         <ContactStack />
-        <Typography variant="body2" sx={{ color: "#000" }}>
+        <Typography variant="body2" sx={{ color:  "#9c27b0" }}>
           © 2025 Prakhar Kushwaha. All Rights Reserved
           
         </Typography>
@@ -71,28 +71,28 @@ export function ContactStack(){
     return(
         <Stack direction= "row"  spacing ={2} sx={{padding:1 , margin: 1}}>
                     <IconButton aria-label="instagram" onClick= {()=> window.open("https://www.instagram.com/prakhar_149")}>
-                        <InstagramIcon sx={{ color: "#000000" ,
+                        <InstagramIcon sx={{ color: "#ffffff" ,
                             "&:hover": {
                                 color: "#E1306C", // Instagram brand color on hover
                             },
                          }}></InstagramIcon>
                     </IconButton>
                     <IconButton aria-label="linkedin" onClick = {()=> window.open("https://www.linkedin.com/in/prakhar-kushwaha-53542834a/")} >
-                        <LinkedInIcon sx={{ color: "#000000",
+                        <LinkedInIcon sx={{ color: "#ffffff",
                              "&:hover": {
                                 color: "#0077B5", // LinkedIn brand color on hover
                             },
                          }}></LinkedInIcon>
                     </IconButton>
                     <IconButton aria-label="reddit"   onClick={()=> window.open("https://www.reddit.com/u/Sudden-Jellyfish9686/s/v6oR4CmuH8")} >
-                        <RedditIcon   sx={{ color: "#000000" ,
+                        <RedditIcon   sx={{ color: "#ffffff" ,
                              "&:hover": {
                                 color: "#FF4500", // Reddit brand color on hover
                             },
                         }}></RedditIcon>
                     </IconButton>
                     <IconButton aria-label="github"   onClick={()=> window.open("https://github.com/Prakhar-Kushwaha")}>
-                        <GitHubIcon   sx={{ color: "#000000" ,
+                        <GitHubIcon   sx={{ color: "#ffffff" ,
                             "&:hover": {
                                 color: "#6cc644", // GitHub green color on hover
                             },

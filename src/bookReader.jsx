@@ -3,7 +3,7 @@ import { Container, Paper, Box } from '@mui/material';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Link from "./bookBuyButton.jsx"
+
 
 export default function({images , title , Link}){
   
@@ -27,16 +27,25 @@ export default function({images , title , Link}){
             sx={{
               py: 2,
               // mb : 3,
-              minHeight: 400,
+              // minHeight: 400,
+              // maxHeight: 600,
+              height : "auto" , 
+              objectFit: "cover",
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
-              bgcolor: '#FAF3E0',
+              bgcolor: "#725CAD",//"#FFE3A9",//'#FAF3E0',
               borderRadius: 2,
               boxShadow: 3,
             }}
           >
-            <Typography variant = "h5" sx={{color : "black" , mb : "2px"}}>
+            <Typography variant = "h6" sx={{color : "#FFE3A9" , mb : "2px", 
+                  fontFamily: "Actor",
+                  fontOpticalSizing: "auto",
+                  fontWeight: 500,
+                  fontStyle: "normal",
+
+            }}>
              {title}
             </Typography>
             <Paper
@@ -49,6 +58,7 @@ export default function({images , title , Link}){
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
+                
               }}
             >
               <Box
@@ -58,16 +68,20 @@ export default function({images , title , Link}){
                 sx={{
                   width: '100%',
                   height: 'auto',
-                  objectFit: 'contain',
+                  objectFit: 'contain',//cover
                 }}
               />
             </Paper>
 
             <Stack direction="row" spacing={2}>
               <Button
-                variant="contained"
+                variant="outlined"
                 onClick={handlePrev}
                 disabled={currentPage === 0}
+                sx={{
+                  backgroundColor : "#8CCDEB",//"#ffe3a9",
+                  color: "#00000",
+                }}
               >
                 Previous
               </Button>
@@ -78,6 +92,10 @@ export default function({images , title , Link}){
                 variant="contained"
                 onClick={handleNext}
                 disabled={currentPage === images.length - 1}
+                sx={{
+                  backgroundColor : "#8CCDEB",//"#ffe3a9",
+                  color: "#000000",
+                }}
               >
                 Next
               </Button>

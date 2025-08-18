@@ -45,11 +45,15 @@ export default function ({ title, children }) {
         <Typography
           variant="h5"
           sx={{
-            color:  "#991b99cf",
+            color:  "#9c27b0",//"#8CCDEB",//"#FFE3A9",//"#991b99cf",
             marginBottom: "12px",
-            fontFamily: "Domine",
+            // fontFamily: "Domine",
+            // fontOpticalSizing: "auto",
+            // fontWeight: 600,
+            // fontStyle: "normal",
+            fontFamily: "Merriweather", 
             fontOpticalSizing: "auto",
-            fontWeight: 600,
+            fontWeight: 700,
             fontStyle: "normal",
           }}
         >

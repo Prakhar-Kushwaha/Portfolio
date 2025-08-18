@@ -52,7 +52,10 @@ function App() {
 
   const gitHubLink =  <Button 
   sx={{
-    marginTop : 2.5
+    marginTop : 2.5, 
+    backgroundColor : "#FFE3A9",
+          color : "#0B1D51"
+    
   }}
   variant="contained" href="https://github.com/Prakhar-Kushwaha/githubClone/tree/main" target="_blank">
   Open Code
