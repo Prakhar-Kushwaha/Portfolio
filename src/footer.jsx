@@ -43,14 +43,17 @@ export default function Footer() {
     <AppBar 
       component="footer" 
       position="static" 
-      sx={{ 
-         mx: "auto",  mr: 0, px: 0,
-         width : "100vw",
-         ml: { xs: 0, md: "calc(-50vw + 50%)" }, // shift out of centered #root
-        backgroundColor: "#0B1D51",//"#2C28A1ca",
-        borderTop: "2px solid #ffffff",
-        
+      sx={{
+        width: "100vw !important",        // full viewport width
+        left: "0 !important",             // align to left edge
+        right: "0 !important",            // align to right edge
+        bottom: "0 !important",
+        margin: "0 !important",
+        padding: "0 !important",
+        backgroundColor: "#0B1D51 !important",
+        borderTop: "2px solid #ffffff !important",
       }}
+      
     >
       <Toolbar sx={{ flexDirection: "column", alignItems: "center", py: 1 }}>
         <ContactStack />
