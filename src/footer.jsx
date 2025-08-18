@@ -45,7 +45,7 @@ export default function Footer() {
       position="static" 
       sx={{ 
          mx: "auto",  mr: 0, px: 0,
-         width : "100dvw",
+         width : "100vw",
          ml: { xs: 0, md: "calc(-50vw + 50%)" }, // shift out of centered #root
         backgroundColor: "#0B1D51",//"#2C28A1ca",
         borderTop: "2px solid #ffffff",
