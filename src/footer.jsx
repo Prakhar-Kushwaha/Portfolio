@@ -43,8 +43,9 @@ export default function Footer() {
     <AppBar 
       component="footer" 
       position="static" 
+      disableGutters // remove unwanted side padding
       sx={{
-        width: "100vw !important",        // full viewport width
+        width: "100% !important",        // full viewport width
         left: "0 !important",             // align to left edge
         right: "0 !important",            // align to right edge
         bottom: "0 !important",
